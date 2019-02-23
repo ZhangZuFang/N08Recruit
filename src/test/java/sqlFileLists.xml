@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<sqlfiles>
+<sqlfile>department.sql</sqlfile>
+<sqlfile>professional.sql</sqlfile>
+<sqlfile>s_infor.sql</sqlfile>
+<sqlfile>t_user.sql</sqlfile>
+
+<sqlfilepath>/N08Recruit/src/test/java/sqlfile</sqlfilepath>
+
+</sqlfiles>
+

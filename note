@@ -1,0 +1,22 @@
+03-25-2017
+
+
+ use the git as versionControl , commit to github
+
+03-26-2017
+the java project before is not  managed by  maven  ,  after convert to maven project 锛�
+
+the location from  D:\tdd_tool\workspace to  C:\Users\Administrator\git\N08Recruit\N08Recruit
+
+ configure the pom the 锛� first step is add dependencies in pom the project need and 
+
+remove the user library 
+
+
+01-17-2018
+i try to re-setup it with few weeks , and just see the note doc , it suprise me , i want setup it from last 
+year start , but what make me not continue , why i can't always keep my steps rightly and still know what 
+i want and what is the next step , can i change myself
+
+
+本地登录： localhost:8080/N08Recruit/login.do

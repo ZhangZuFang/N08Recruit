@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	id="WebApp_ID" version="2.5">
+	<!-- 與數據庫的鏈接，現在采用的是非注入bean的方式，而是通過對象的方式創建“數據源”和“數據模板” -->
+	<!-- <context-param>
+		<param-name>contextConfigLocation</param-name>
+		<param-value>classpath:/META-INF/jdbc-context.xml</param-value>
+	</context-param> -->
+	
+	 <!-- <listener>
+    <listener-class>main.java.listener.H2InitListener</listener-class>
+    </listener> -->
+    
+    
+	<servlet>
+		<servlet-name>spmvc</servlet-name>
+		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+		<!-- 提供参数给servlet，在这里是提供给spring的dispatcherServlet，因为是spring，在这里可以初始化spring容器-->
+		<init-param>
+			<param-name>contextConfigLocation</param-name>
+			<param-value>classpath:/META-INF/spmvc-servlet.xml</param-value>
+		</init-param>
+		<!-- 配置应用部署的时候就init这个servlet-->
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>spmvc</servlet-name>
+		<!-- 所有该模式的url都映射到该servlet，所谓所有url也是基于当前应用所在的服务器和其暴露的端口-->
+		<url-pattern>*.do</url-pattern>
+	</servlet-mapping>
+	
+	<filter>
+        <filter-name>sessionFilter</filter-name>
+        <filter-class>main.java.filter.SessionFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>sessionFilter</filter-name>
+        <url-pattern>*.do</url-pattern>
+    </filter-mapping> 
+    
+</web-app>
