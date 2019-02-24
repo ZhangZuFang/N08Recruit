@@ -47,21 +47,6 @@ public class ViewController {
 	@Autowired
     SqlInterfaceImple sqlImple;
 
-    /*
-     * 
-     * @RequestMapping("/login.do") 
-     * public ModelAndView Login(HttpServletRequest request, HttpServletResponse response) throws Exception 
-     * { 
-     *     ModelAndView ma  = new ModelAndView("jsp/login.jsp");
-     *      return ma; 
-     * }
-     */
-
-	/*该请求返回静态页面*/
-    @RequestMapping("/login.do")
-    public String login() {
-        return "login";
-    }
 
     @RequestMapping("/loginSubmit.do")
     public ModelAndView loginSubmit(HttpServletRequest request, HttpServletResponse response, HttpSession session) {
