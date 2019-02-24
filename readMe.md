@@ -1,14 +1,11 @@
 
 
-CI config :
+(1)使用eclipse开发
 
+(2)maven管理jar包
 
-maven config : 
- 
- 开发：使用本地maven
-user setting :apache-maven-***\conf\settings.xml
-修改setting 文件: <localRepository>D:/MeTools/m2/Repository</localRepository>
+(3).setting文件的存在让项目在eclipse中可以 run on server
 
 
 
-服务器上部署：
+
