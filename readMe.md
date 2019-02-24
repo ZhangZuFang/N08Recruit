@@ -1,11 +1,12 @@
 
 
-(1)Ê¹ÓÃeclipse¿ª·¢
+(1)ä½¿ç”¨eclipseå¼€å‘
 
-(2)maven¹ÜÀíjar°ü
+(2)mavenç®¡ç†jaråŒ…
 
-(3).settingÎÄ¼şµÄ´æÔÚÈÃÏîÄ¿ÔÚeclipseÖĞ¿ÉÒÔ run on server
+(3).settingæ–‡ä»¶çš„å­˜åœ¨è®©é¡¹ç›®åœ¨eclipseä¸­å¯ä»¥ run on server
 
+(4)jenkinsæ„å»ºï¼šç”Ÿæˆçš„waråŒ…ä½ç½®ä¸maven settingé…ç½®çš„repositoryæœ‰å…³
 
 
 
