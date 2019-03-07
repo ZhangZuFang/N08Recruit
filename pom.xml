@@ -7,7 +7,7 @@
     <sourceDirectory>src</sourceDirectory>
     <resources>
       <resource>
-        <directory>src-resource</directory>
+        <directory>resources</directory>
         <excludes>
           <exclude>**/*.java</exclude>
         </excludes>
