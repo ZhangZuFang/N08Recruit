@@ -7,6 +7,7 @@
     <sourceDirectory>src</sourceDirectory>
     <resources>
       <resource>
+      <!-- <targetPath></targetPath> 指定build后的resource存放的文件夹，默认是basedir -->
         <directory>resources</directory>
         <excludes>
           <exclude>**/*.java</exclude>
