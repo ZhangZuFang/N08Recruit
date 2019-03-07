@@ -9,5 +9,4 @@
 (4)jenkins构建：生成的war包位置与maven setting配置的repository有关
        使用Deploy插件将war包部署到tomcat
 
-
-（）test 1
+(5)测试jenkins执行mvn install , war包会不会放到m2仓库中
