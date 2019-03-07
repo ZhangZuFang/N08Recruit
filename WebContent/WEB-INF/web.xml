@@ -20,7 +20,7 @@
 		<!-- 提供参数给servlet，在这里是提供给spring的dispatcherServlet，因为是spring，在这里可以初始化spring容器-->
 		<init-param>
 			<param-name>contextConfigLocation</param-name>
-			<param-value>classpath:/META-INF/spmvc-servlet.xml</param-value>
+			<param-value>classpath:/spmvc-servlet.xml</param-value>
 		</init-param>
 		<!-- 配置应用部署的时候就init这个servlet-->
 		<load-on-startup>1</load-on-startup>
